@@ -4,7 +4,7 @@
   --blue-color: #3882f6;
   --dark-grey-color: #1f2937;
   --white-one-color: #f9faf8;
-  --white-two-color: #e5e7eb;
+  --light-grey-color: #e5e7eb;
 }
 
 * {
@@ -35,7 +35,7 @@ header {
 .hero .hero-text p,
 .navbar ul li {
   font-size: 18px;
-  color: var(--white-two-color);
+  color: var(--light-grey-color);
 }
 
 .navbar ul {
@@ -88,6 +88,7 @@ header {
 }
 
 .random-information h2 {
+  margin-top: 5%;
   font-size: 36px;
   font-weight: bold;
   color: var(--dark-grey-color);
@@ -97,7 +98,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 60%;
-  margin: 2% 0;
+  margin: 2% 0 8%;
 }
 
 .four-pics .pic-subtext {
@@ -113,4 +114,33 @@ header {
 
 .four-pics .pic-subtext p {
   color: grey;
+  font-size: 16px;
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey-color);
+  padding: 7% 8%;
+}
+.quote figure {
+  width: 80%;
+}
+
+.quote blockquote {
+  font-size: 36px;
+  font-style: italic;
+  color: #495057;
+}
+
+.quote figcaption {
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dark-grey-color);
+  margin-right: 9%;
 }
