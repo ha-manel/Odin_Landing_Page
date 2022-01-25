@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --blue-color: #3882f6;
+  --dark-grey-color: #1f2937;
+  --white-one-color: #f9faf8;
+  --white-two-color: #e5e7eb;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
   height: 100vh;
   margin: 0;
 }
 
 header {
   padding: 1% 15% 5%;
-  background-color: #1f2937;
-  color: #f9faf8;
+  background-color: var(--dark-grey-color);
+  color: var(--white-one-color);
 }
 
 .navbar {
@@ -29,7 +35,7 @@ header {
 .hero .hero-text p,
 .navbar ul li {
   font-size: 18px;
-  color: #e5e7eb;
+  color: var(--white-two-color);
 }
 
 .navbar ul {
@@ -57,10 +63,10 @@ header {
 
 .hero .hero-text .sign-up-btn {
   cursor: pointer;
-  background-color: #3882f6;
+  background-color: var(--blue-color);
   border: none;
   font-family: inherit;
-  color: #f9faf8;
+  color: var(--white-one-color);
   font-size: 19px;
   padding: 1% 6%;
   border-radius: 10px;
@@ -73,4 +79,38 @@ header {
   align-items: center;
   width: 45%;
   background-color: grey;
+}
+
+.random-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.random-information h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--dark-grey-color);
+}
+
+.random-information .four-pics {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 2% 0;
+}
+
+.four-pics .pic-subtext {
+  width: 150px;
+}
+
+.four-pics .pic-subtext div {
+  width: 100%;
+  height: 150px;
+  border: 3px solid var(--blue-color);
+  border-radius: 9px;
+}
+
+.four-pics .pic-subtext p {
+  color: grey;
 }
