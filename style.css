@@ -3,7 +3,7 @@
 :root {
   --blue-color: #3882f6;
   --dark-grey-color: #1f2937;
-  --white-one-color: #f9faf8;
+  --white-color: #f9faf8;
   --light-grey-color: #e5e7eb;
 }
 
@@ -20,7 +20,7 @@ body {
 header {
   padding: 1% 15% 5%;
   background-color: var(--dark-grey-color);
-  color: var(--white-one-color);
+  color: var(--white-color);
 }
 
 .navbar {
@@ -66,14 +66,14 @@ header {
   background-color: var(--blue-color);
   border: none;
   font-family: inherit;
-  color: var(--white-one-color);
+  color: var(--white-color);
   font-size: 19px;
   padding: 1% 6%;
   border-radius: 10px;
 }
 
 .hero .hero-img {
-  margin: 4% 0;
+  margin: 5% 0 0.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +161,7 @@ header {
   background-color: var(--blue-color);
   padding: 2% 0;
   border-radius: 10px;
-  color: var(--white-one-color);
+  color: var(--white-color);
 }
 
 .CTA .CTA-container .CTA-btn {
@@ -169,7 +169,15 @@ header {
   background-color: var(--blue-color);
   color: var(--light-grey-color);
   font-size: 1.2rem;
-  border: 2px solid var(--white-one-color);
+  border: 2px solid var(--white-color);
   border-radius: 5px;
   padding: 10px 20px;
+}
+
+footer {
+  background-color: var(--dark-grey-color);
+  color: var(--white-color);
+  text-align: center;
+  font-size: 19px;
+  padding: 1%;
 }
